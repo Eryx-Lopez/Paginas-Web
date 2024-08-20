@@ -22,7 +22,7 @@ body{
 }
 
 .navbar li{
-    margin: 0 8px;
+    margin: 0 8px; /*Espacio entre los enlaces*/
 }
 
 .navbar li a{
@@ -43,4 +43,23 @@ body{
     height: 32px;
     margin-right: 16px;
     margin-left: 16px;
+}
+
+.language-selector{
+    margin-left: auto;
+    margin-right: 16px;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: beige;
+}
+
+.language-selector {
+    background-color: beige;
+}
+
+.language-selector option{
+    background-color: white;
+    font-weight: bold;
 }
