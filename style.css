@@ -1,0 +1,80 @@
+body{
+    font-family: 'Anton';
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B8E107;
+
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nav-content li{
+    
+    border-bottom: 4px solid transparent;
+    list-style: none;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.nav-content li:hover{
+    border-bottom: 4px solid #B8E107; 
+}
+
+.navbar li a{
+    display: block;
+    color: #B8E107;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#logo{
+    margin-left: 40px;
+    height: 100%;
+
+}
+
+#banner{
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.split-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Ajusta el tamaño y estilo del botón según tus preferencias */
+    padding: 10px 20px;
+    background-color: #B8E107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button{
+    background-color: #594A48;
+    border-radius: 8px;
+    padding: 16px;
+    color: white;
+    font-style: bold;
+}
