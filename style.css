@@ -11,7 +11,7 @@ body{
     height: 32px;
     padding-top: 8px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #B8E107;
+    border-bottom: 2px solid #B8E107;
 
 }
 
@@ -49,32 +49,25 @@ body{
 
 #banner{
     width: 100%;
+    height: auto;
 }
 
-.image-container {
-    position: relative;
+.aligned-button{
+    position:relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.split-button {
+.bttn{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Ajusta el tamaño y estilo del botón según tus preferencias */
-    padding: 10px 20px;
+    right: 50%;
+    transform: translateX(50%);
     background-color: #B8E107;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button{
-    background-color: #594A48;
     border-radius: 8px;
     padding: 16px;
     color: white;
     font-style: bold;
+    border-color: #B8E107;
+    margin-bottom: 20px; /* No se como hacer que este en el centro de la imagen, asi que quedo un poco arriba*/
 }
+
