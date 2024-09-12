@@ -1,10 +1,11 @@
 body{
-    font-family: 'Anton';
+    font-family: 'barlow';
     margin: 0;
     padding: 0;
 }
 
 .navbar{
+    font-family: 'Anton';
     background-color: white;
     display: flex;
     align-items: center;
@@ -59,6 +60,7 @@ body{
 }
 
 .bttn{
+    font-weight: bold;
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -96,9 +98,26 @@ text-decoration: none;
     flex-direction: column;
     align-items:flex-start;
 }
-.div-block2{
-    width: 30%;
+.div-block2-3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+    color: #B8E107;
+    font-weight: bold;
 }
-.div-block3{
-    width: 20%;
+
+.footer-left {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.footer-menu{
+    width: 72px;
+}
+.info{
+    margin-left: 64px;
+    width: 176px;
+
 }
