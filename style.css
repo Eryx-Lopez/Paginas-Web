@@ -156,10 +156,52 @@ h2{
     font-family: 'Anton';
     font-weight: 70;
     letter-spacing: 1px;
+    margin-bottom: 0;
 }
 .part-1, .part-2, .part-3, .part-4, .part-5{
     position: relative;
-    height: 500px;
-    margin-left: 32px;
+    height: auto;
+    width: 60%;
+
+}
+.list-fecha{
+    border-bottom: 2px solid #D1CECB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    justify-self: flex-start;
 }
 
+.section-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.dia{
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+    color: #261818;
+    
+}
+.lugar{
+    width: 80%;
+}
+h3{
+    font-family: 'Anton';
+    font-size:x-large;
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #776C67;
+}
+
+#stadium{
+    font-size: medium;
+    margin: 0;
+    color: #261818;
+
+}
