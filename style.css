@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'barlow';
     margin: 0;
     padding: 0;
@@ -73,7 +73,6 @@ html{
     position:relative;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 64px;
 }
 
 .bttn{
@@ -158,10 +157,12 @@ h2{
     letter-spacing: 1px;
     margin-bottom: 0;
 }
-.part-1, .part-2, .part-3, .part-4, .part-5{
+.part-1, .part-2, .part-3, .part-4, .part-5 {
     position: relative;
     height: auto;
     width: 60%;
+    scroll-margin-top: 56px;
+
 
 }
 .list-fecha{
@@ -174,7 +175,7 @@ h2{
     justify-self: flex-start;
 }
 
-.section-group{
+.section-group {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -204,4 +205,60 @@ h3{
     margin: 0;
     color: #261818;
 
+}
+.setlist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.setlist-right{
+    border-left: 2px solid #D1CECB;
+    padding-left: 40px;
+}
+.setlist div{
+    width: 50%;
+}
+
+ol{
+    color: #261818;
+    font-size: medium;
+}
+
+ol li::marker{
+    color: #776C67;
+    font-family: 'Anton';
+}
+
+ol li{
+    margin-bottom: 8px;
+}
+.gallery{
+    float: left;
+    margin-right: 10px;
+    width:30%;
+    align-items: center;
+    justify-content: center;
+}
+.gallery img{
+    max-width: 200px;
+}
+.gallery-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#price{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.gallery p{
+    margin-bottom: 0;
 }
