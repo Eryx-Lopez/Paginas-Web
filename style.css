@@ -1,0 +1,436 @@
+body {
+    font-family: 'barlow';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+/* BARRA DE NAVEGACION */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 32px;
+    font-family: 'Anton';
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #B8E107;
+
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nav-content li{
+    
+    border-bottom: 4px solid transparent;
+    list-style: none;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.nav-content li:hover{
+    border-bottom: 4px solid #B8E107; 
+}
+
+.navbar li a{
+    display: block;
+    color: #B8E107;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#logo-container {
+    display: inline-block; /* Para que ocupe solo el espacio necesario */
+    margin-right: 20px; /* Ajusta el margen según tu diseño */
+}
+
+#logo{
+    margin-left: 40px;
+    height: 32px;
+
+}
+
+/* BANNER INICIAL */
+#banner{
+    width: 100%;
+    height: auto;
+}
+
+.aligned-button{
+    margin-top: 32px;
+    position:relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bttn{
+    font-weight: bold;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #B8E107;
+    border-radius: 8px;
+    padding: 16px;
+    color: white;
+    font-style: bold;
+    border-color: #B8E107;
+    margin-bottom: 20px; /* No se como hacer que este en el centro de la imagen, asi que quedo un poco arriba*/
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-end;
+    border-top: 2px solid #B8E107;
+}
+
+#SMlogo{
+    max-height: 48px
+}
+
+footer img{
+    margin: 8px;
+    max-height: 24px;
+    
+}
+
+.div-block1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.div-block2-3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+    color: #B8E107;
+    font-weight: bold;
+}
+
+.footer-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.footer-menu{
+    width: 72px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.info{
+    margin-left: 64px;
+    width: 176px;
+}
+
+.language-selector{
+    margin-top: 16px;
+    width: 120px;
+    padding: 6px;
+    background-color: #B8E107;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+h2{
+    color: #B8E107;
+    font-family: 'Anton';
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.part-1, .part-2, .part-3, .part-4{
+    position: relative;
+    height: auto;
+    width: 70%;
+    scroll-margin-top: 56px;
+}
+
+/* FECHAS */
+.list-fecha{
+    border-bottom: 2px solid #D1CECB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    justify-self: flex-start;
+}
+
+.section-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.dia{
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+    color: #261818;
+    
+}
+.lugar{
+    width: 80%;
+}
+#last-list{
+    border-bottom: 2px solid white;
+}
+h3{
+    font-family: 'Anton';
+    font-size:x-large;
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #776C67;
+}
+
+#stadium{
+    font-size: medium;
+    margin: 0;
+    color: #261818;
+
+}
+
+.ticket-bttn{
+    padding-left:16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    margin-right: 64px;
+
+    background-color: #776C67;
+    border-color: #776C67;
+    color: white;
+    border-radius: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.ticket-bttn:hover{
+    background-color: #261818;
+    border-color: #261818;
+}
+
+/* SETLIST */
+.setlist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.setlist-right{
+    border-left: 2px solid rgba(184, 225, 7, 0.4);
+    padding-left: 160px;
+}
+.setlist div{
+    width: 50%;
+}
+
+ol{
+    color: #261818;
+    font-size: medium;
+}
+
+ol li::marker{
+    color: #776C67;
+    font-family: 'Anton';
+}
+
+ol li{
+    margin-bottom: 8px;
+}
+
+/* MERCANCIA */
+.gallery{
+    float: left;
+    margin-right: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    width:30%;
+    align-items: center;
+    justify-content: center;
+
+}
+.gallery img{
+    max-width: 200px;
+}
+
+.gallery-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.img-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: #776C67;
+    margin-bottom: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#price{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery p{
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.gallery-img:hover .image-container {
+    transform: scale(1.2);
+}
+
+/* AYUDA */
+.FAQ-content{
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h4{
+    font-family: 'Anton';
+    font-size:large;
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #776C67;
+}
+.FAQ{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid rgba(184, 225, 7, 0.4);
+}
+
+#last-question{
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin-left: 20%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    width: 60%;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+
+    .aligned-button{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .section-group{
+        width: auto;
+    }
+    .list-fecha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #stadium{
+        margin-bottom: 16px;
+    }
+    .dia{
+        width: 100%;
+    }
+    .setlist{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .setlist-right{
+        border-left: 0;
+        padding-left: 0;
+    }
+    .gallery{
+        float: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    
+        width:100%;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        padding: 20px;
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; 
+        align-items: center;
+        border-top: 2px solid #B8E107;
+    }
+    #logo-container{
+        margin-right: 0;
+    }
+    #logo{
+        margin-left: 8px;
+    }
+    .bttn{
+        margin-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+  }
+
+  
