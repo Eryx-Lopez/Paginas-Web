@@ -1,0 +1,97 @@
+body{
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    margin-bottom: 0px;
+}
+
+.navbar ul{
+    list-style-type: none; /*Adiós viñetas*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    flex-grow: 1; /*Lista ocupa resto de espacio*/
+}
+
+.navbar li{
+    margin: 0 4px; /*Espacio entre los enlaces*/
+}
+
+.navbar li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: #F2F2F2;
+    border-radius: 8px;
+}
+
+.navbar img{
+    height: 32px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.login-button{
+    background-color: #323F59;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+hr {
+    height: 1px; 
+    margin-left: 0; /* Empieza desde el lado izquierdo */
+    margin-right: 50%; /* Termina a la mitad del contenedor (Espacio dejado desde la derecha)*/
+    background-color: #97A2A6;
+    margin-bottom: 56px;
+}
+
+
+footer {
+    background-color: #9197a1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: center; /* Centra verticalmente */
+}
+
+.contact-info {
+    font-size: 16px;
+    text-align: left;
+}
+
+.social-icons b {
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+}
+.social-icons b img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+b:visited {
+    color: black;
+}
+
+b:link {
+    color: black;
+}
