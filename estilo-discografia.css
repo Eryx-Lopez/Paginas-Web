@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Messapia-Bold'; /* Name your font family */
+    src: url('Fonts/Messapia-Bold.otf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'Messapia-Regular'; /* Name your font family */
+    src: url('Fonts/Messapia-Regular.otf'); /* Locate the .ttf file within your directory*/
+}
+  
+body {
+    font-family: 'Messapia', sans-serif; /* Use the font family */
+}
+
+
+/* BARRA DE NAVEGACION */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 32px;
+    font-family: 'Messapia-Regular';
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #B8E107;
+
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nav-content li{
+    
+    border-bottom: 4px solid transparent;
+    list-style: none;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.nav-content li:hover{
+    border-bottom: 4px solid #B8E107; 
+}
+
+.navbar li a{
+    display: block;
+    color: #B8E107;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#logo-container {
+    display: inline-block; /* Para que ocupe solo el espacio necesario */
+    margin-right: 20px; /* Ajusta el margen según tu diseño */
+}
+
+#logo{
+    margin-left: 24px;
+    height: 48px;
+
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-end;
+    border-top: 2px solid #B8E107;
+}
+
+#SMlogo{
+    max-height: 48px
+}
+
+footer img{
+    margin: 8px;
+    max-height: 24px;
+    
+}
+
+.div-block1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.div-block2-3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+    color: #B8E107;
+    font-weight: bold;
+}
+
+.footer-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.footer-menu{
+    width: 72px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.info{
+    margin-left: 64px;
+    width: 176px;
+}
+
+.language-selector{
+    margin-top: 16px;
+    width: 120px;
+    padding: 6px;
+    background-color: #B8E107;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer a{
+    text-decoration: none;
+}
