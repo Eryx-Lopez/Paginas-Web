@@ -9,8 +9,14 @@
   
 body {
     font-family: 'Messapia', sans-serif; /* Use the font family */
+    background-color: black;
 }
 
+h2{
+    font-family: 'Messapia-Regular';
+    color: #B8E107;
+
+}
 
 /* BARRA DE NAVEGACION */
 .navbar{
@@ -20,7 +26,7 @@ body {
     z-index: 1000;
     height: 32px;
     font-family: 'Messapia-Regular';
-    background-color: white;
+    background-color: black;
 
     display: flex;
     align-items: center;
@@ -133,10 +139,59 @@ footer img{
     background-color: #B8E107;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
-.footer a{
+footer a{
     text-decoration: none;
+}
+
+/* INICIO */
+.section-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.concepto, .videos, .noticias{
+    position: relative;
+    height: auto;
+    width: 80%;
+    scroll-margin-top: 56px;
+
+}
+/* videos */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-video {
+    position: relative; /* Para posicionar el triángulo correctamente */
+    display: inline-block; /* Ajusta según tu diseño */
+}
+
+.play-triangle {
+    position: absolute;
+    top: 35%; /* Centra verticalmente */
+    left: 42%; /* Centra horizontalmente */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid rgba(255, 255, 255, 0.7); /* Cambia el color según tu diseño */
+    transform: rotate(90deg);
+
+}
+
+#thumbnail{
+    max-height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
 }
