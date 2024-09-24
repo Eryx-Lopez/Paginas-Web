@@ -166,9 +166,10 @@ footer a{
 .gallery{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
+    
 }
 
 .image-video {
@@ -178,7 +179,7 @@ footer a{
 
 .play-triangle {
     position: absolute;
-    top: 35%; /* Centra verticalmente */
+    top: 24%; /* Centra verticalmente */
     left: 42%; /* Centra horizontalmente */
     width: 0;
     height: 0;
@@ -188,6 +189,11 @@ footer a{
     transform: rotate(90deg);
 
 }
+.video-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 #thumbnail{
     max-height: 100px;
@@ -195,3 +201,16 @@ footer a{
     margin-right: 10px;
     border-radius: 8px;
 }
+.video-gallery p{
+
+}
+.video-gallery a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+#video-title{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
