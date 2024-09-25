@@ -17,6 +17,23 @@ h2{
     color: #B8E107;
 
 }
+h3{
+    font-family: 'Messapia-Regular';
+    color: #B8E107;
+
+}
+p{
+    color: white;
+    font-family: 'Messapia-Bold';
+    font-size: 13px;
+}
+.p-green{
+    color: #B8E107;
+}
+.center-text{
+    display: flex;
+    justify-content: center;
+}
 
 /* BARRA DE NAVEGACION */
 .navbar{
@@ -155,13 +172,48 @@ footer a{
     align-items: center;
     margin-top: 40px;
 }
-.concepto, .videos, .noticias{
+.concepto, .videos, .noticias, .nct127{
     position: relative;
     height: auto;
     width: 80%;
     scroll-margin-top: 56px;
 
 }
+
+/* concepto */
+.text-side li{
+    color: white;
+    font-family: 'Messapia-Bold';
+    font-size: 13px;
+}
+.concept-gallery{
+    display: flex;
+    flex-direction: row;
+}
+.text-side{
+    width: 57%;
+}
+.nct-side{
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+}
+.nct-gallery img{
+    max-width: 185px;
+}
+.group-nct{
+    display: flex;
+    justify-content: center;
+}
+
+.left-side{
+    float:left;
+    margin-left: 24px;
+}
+.right-side{
+    float: right;
+}
+
 /* videos */
 .gallery{
     display: flex;
@@ -169,7 +221,6 @@ footer a{
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
-    
 }
 
 .image-video {
@@ -201,9 +252,7 @@ footer a{
     margin-right: 10px;
     border-radius: 8px;
 }
-.video-gallery p{
 
-}
 .video-gallery a{
     text-decoration: none;
     color: white;
@@ -213,4 +262,64 @@ footer a{
     margin-left: 10px;
     margin-right: 10px;
 }
+/* GRUPOS */
+.member-photo img{
+    max-height: 200px;
+}
 
+.members-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 172px;
+}
+
+.gallery-row{
+    display: flex;
+    flex-direction: column;
+
+}
+.upper-side, .bottom-side{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.member-info p{
+    max-width: 133px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+.member-info a{
+    max-width: 133px;
+    margin-right: 16px;
+    color: white;
+    text-decoration: none;
+    text-size: 16px;
+}
+
+
+
+@media screen and (min-width: 1300px){ /* PARA MONITORES */
+    /* INICIO */
+    .nct-gallery img{
+        max-width: 200px;
+    }
+    .left-side{
+        float:left;
+        margin-left: 112px
+    }
+    #video-title{
+        max-width: 266px;
+    }
+    .gallery{
+        justify-content: flex-start;
+    }
+    #thumbnail{
+        max-height: 150px;
+    }
+    
+    .play-triangle{
+        top:35%
+    }
+}
