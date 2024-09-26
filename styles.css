@@ -175,7 +175,7 @@ footer a{
     align-items: center;
     margin-top: 40px;
 }
-.concepto, .videos, .noticias, .nct127, .nct-dream, .nct-u, .nct-wish, .wayv{
+.concepto, .videos, .noticias, .nct127, .nct-dream, .nct-u, .nct-wish, .wayv, .dream-merch{
     position: relative;
     height: auto;
     width: 80%;
@@ -315,7 +315,29 @@ footer a{
     width: 100%;
     margin-bottom: 24px;
 }
+/* MERCANCIA */
+.gallery-merch{
+    float: left;
+    margin-right: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
+    width:30%;
+    align-items: center;
+    justify-content: center;
+
+}
+.gallery img{
+    max-width: 200px;
+}
+
+.gallery-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
 
 @media screen and (min-width: 1300px){ /* PARA MONITORES */
     /* INICIO */
