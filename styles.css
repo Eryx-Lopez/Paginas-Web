@@ -30,6 +30,9 @@ p{
 .p-green{
     color: #B8E107;
 }
+li{
+    color: white;
+}
 .center-text{
     display: flex;
     justify-content: center;
@@ -172,7 +175,7 @@ footer a{
     align-items: center;
     margin-top: 40px;
 }
-.concepto, .videos, .noticias, .nct127{
+.concepto, .videos, .noticias, .nct127, .nct-dream, .nct-u, .nct-wish, .wayv{
     position: relative;
     height: auto;
     width: 80%;
@@ -264,14 +267,15 @@ footer a{
 }
 /* GRUPOS */
 .member-photo img{
-    max-height: 200px;
+    width: 200px;
+    border-radius: 8px;
 }
 
 .members-gallery{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 172px;
+    width: auto;
 }
 
 .gallery-row{
@@ -284,9 +288,10 @@ footer a{
     align-items: flex-start;
     width: 100%;
     margin-bottom: 24px;
+    justify-content: space-between;
 }
 .member-info p{
-    max-width: 133px;
+    width: 200px;
     margin-right: 16px;
     text-decoration: none;
 }
@@ -294,10 +299,22 @@ footer a{
     max-width: 133px;
     margin-right: 16px;
     color: white;
-    text-decoration: none;
-    text-size: 16px;
+    text-decoration-color: #B8E107;
+    font-family: 'Messapia-Bold';
+    font-size: 13px;
+
 }
 
+.text-member{
+    height: 130px;
+}
+
+.last{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 24px;
+}
 
 
 @media screen and (min-width: 1300px){ /* PARA MONITORES */
