@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Daily List</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="root">
+            <div class="input-container">
+                <form class="form" id="to-do-form">
+                    <input type="text" name="element" id="element" placeholder="Add new task"/>
+                    <button type="submit" id="submit">Add</button>
+                </form>
+            </div>
+            <div class="to-do-container">
+                <h1 class="title">My daily list</h1>
+                <ul id="to-do-list" class="to-do-list">
+
+                </ul>
+            </div>
+        </div>
+<!-- 
+DOM
+Document
+Object
+Model
+
+Todo lo que esta dentro del body es mi DOM
+El root se imprimiria como un objeto
+-->
+            <script>
+                
+                const form = document.getElementById('to-do-form');
+                form.addEventListener('submit', (event) => {
+                    //Si le doy a add, para que no lo agarre en el enlace
+                    event.preventDefault();  
+                    
+                    //Todos los eventos tienen un target, con lo que reacciono, que seria el form. Con el .value ya lo agarro de forma directa
+                    const value = event.target.element.value;
+                    
+                    /*
+
+                    === igual en tipo de dato y valor
+                    == igual solo en valor
+
+                    !== diferente en tipo de dato y valor
+                    != diferente solo en valor
+
+                    !value = negacion/es diferente pero con una variable
+                    !!value = doble negacion (que exista)
+
+                    */
+                    if(!!value && value !== ''){
+                        const toDoList = document.getElementById('to-do-list');
+                        const li = document.createElement('li');
+                        li.classList.add('to-do-list-item');
+
+                        const p = document.createElement('p');
+                        p.textContent = value;
+                        
+                        /*
+                        const edtiButton = document.createElement('span');
+                        editButton.textContent = 'Edit'; 
+
+                        editButton.addEventListener('click', (e) => {
+
+                        })
+                        */
+                        
+                        const deleteButton = document.createElement('span');
+                        deleteButton.textContent = 'X'; //Tachita 
+
+                        deleteButton.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            toDoList.removeChild(li);
+                        })
+                        
+                        li.appendChild(p);
+                        li.appendChild(deleteButton);
+                        toDoList.appendChild(li);
+
+                        //Para borrar en el input de forma inmediata
+                        event.target.element.value = '';
+                    }
+
+                    
+                })
+
+            </script>
+
+    </body>
+</html>
