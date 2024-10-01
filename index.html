@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Actividad 1</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>My Daily List</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    <header>
-        <nav class="navbar">
-            <img src="C:\Users\eryxl\Downloads\Serenity.jpeg" alt="Logotipo">
-            <ul>
-                <li> <a href="Inicio">Inicio</a></li>
-                <li> <a href="Producto">Producto</a></li>
-                <li> <a href="Descarga">Descarga</a></li>
-                <li> <a href="Soluciones y Precios">Soluciones y Precio</a></li>
-                <li> <a href="Recursos">Recursos</a></li>
-                <li> <a href="Blog">Blog</a></li>
-            </ul>
-            <!-- <select class="language-selector">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-                <option value="jp">日本語</option>
-            </select> -->
-            <button class="login-button">Iniciar Sesion</button>
-           </nav>
-           <hr>
-    </header>
     <body>
-        <div class="title">
-            <h1>ANOTA, ORGANIZA <br>
-                Y ENCUENTRA SERENITY</h1>
-        </div>
-            <div class="container">
-
-                <div class="column">
-                    <h2>Toma notas</h2>
-                    <p>Toma notas rapidamente y organizalas de la forma que tu quieras, desde donde quiera que estes. <br>
-                        No solo puedes escribir, tambien puedes dibujar y hacer notas a mano. <br>
-                    </p>
-                    <a href="#" class="cta-button">¡Descarga aquí!</a>
-                </div>
-                <div class="image">
-                    <img src="C:\Users\eryxl\Pictures\Screenshots\Captura de pantalla 2024-08-27 212258.png" alt="Imagen Derecha">
-                </div>
+        <div class="root">
+            <div class="input-container">
+                <form class="form" id="to-do-form">
+                    <input type="text" name="element" id="element" placeholder="Add new task"/>
+                    <button type="submit" id="submit">Add</button>
+                </form>
             </div>
+            <div class="to-do-container">
+                <h1 class="title">My daily list</h1>
+                <ul id="to-do-list" class="to-do-list">
+
+                </ul>
+            </div>
+        </div>
+<!-- 
+DOM
+Document
+Object
+Model
+
+Todo lo que esta dentro del body es mi DOM
+El root se imprimiria como un objeto
+-->
+
+<!--
+
+=== igual en tipo de dato y valor
+== igual solo en valor
+
+!== diferente en tipo de dato y valor
+!= diferente solo en valor
+
+!value = negacion/es diferente pero con una variable
+!!value = doble negacion (que exista)
+
+-->
+
+<!-- 
+localStorage.getItem para jalarlos, que idealmente tengo entendido seria lo primero en el codigo
+localStorage.setItem para guardarlos, que idealmente iria al crear un nuevo item
+localStorage.removeItem para eliminarlos, que idealmente iria al darle al deleteButton
+-->
+            <script>
+                
+                const form = document.getElementById('to-do-form');
+                
+                form.addEventListener('submit', (event) => {
+                    //Si le doy a add, para que no lo agarre en el enlace
+                    event.preventDefault();  
+                    
+                    //Todos los eventos tienen un target, con lo que reacciono, que seria el form. Con el .value ya lo agarro de forma directa
+                    const value = event.target.element.value;
+                    
+
+                    if(!!value && value !== ''){
+                        const toDoList = document.getElementById('to-do-list');
+                        const li = document.createElement('li');
+
+                        li.classList.add('to-do-list-item');
+
+                        const checkbox = document.createElement('input');
+                        checkbox.type = 'checkbox';
+
+                        const p = document.createElement('p');
+                        p.textContent = value;
+
+                        checkbox.addEventListener("click", function () {
+                        li.classList.toggle("completed", checkbox.checked);
+                        });
+
+                       const editButton = document.createElement('span');
+                       editButton.textContent = 'Edit';
+
+                       editButton.addEventListener('click', (e) => {
+                        const update = prompt('Edit task: ', p.textContent);
+                        if(update !== null){
+                            p.textContent = update;
+                            li.classList.remove('completed');
+                        }
+
+                       });
+                       
+                        
+                        const deleteButton = document.createElement('span');
+                        deleteButton.textContent = 'X'; //Tachita 
+
+                        deleteButton.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            if(confirm("Are you sure you want to delete this task?")){
+                                toDoList.removeChild(li);
+                            }
+
+                        });
+                        
+                        li.appendChild(checkbox);
+                        li.appendChild(p);
+                        li.appendChild(editButton);
+                        li.appendChild(deleteButton);
+                        toDoList.appendChild(li);
+
+                        //Para borrar en el input de forma inmediata
+                        event.target.element.value = '';
+                    }
+                });
+
+            </script>
 
     </body>
 </html>
