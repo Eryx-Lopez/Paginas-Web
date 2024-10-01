@@ -68,10 +68,16 @@
     margin-top: 24px;
     border-radius: 8px;
 }
+
+.completed {
+    text-decoration: line-through;
+    color: olive;
+   
+  }
+
 /* Estilos para el título */
 .title {
     font-size: 24px;
     margin-bottom: 16px;
     border-bottom: 2px solid olive;
-
 }
