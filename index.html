@@ -30,9 +30,29 @@ Model
 Todo lo que esta dentro del body es mi DOM
 El root se imprimiria como un objeto
 -->
+
+<!--
+
+=== igual en tipo de dato y valor
+== igual solo en valor
+
+!== diferente en tipo de dato y valor
+!= diferente solo en valor
+
+!value = negacion/es diferente pero con una variable
+!!value = doble negacion (que exista)
+
+-->
+
+<!-- 
+localStorage.getItem para jalarlos, que idealmente tengo entendido seria lo primero en el codigo
+localStorage.setItem para guardarlos, que idealmente iria al crear un nuevo item
+localStorage.removeItem para eliminarlos, que idealmente iria al darle al deleteButton
+-->
             <script>
                 
                 const form = document.getElementById('to-do-form');
+                
                 form.addEventListener('submit', (event) => {
                     //Si le doy a add, para que no lo agarre en el enlace
                     event.preventDefault();  
@@ -40,18 +60,7 @@ El root se imprimiria como un objeto
                     //Todos los eventos tienen un target, con lo que reacciono, que seria el form. Con el .value ya lo agarro de forma directa
                     const value = event.target.element.value;
                     
-                    /*
 
-                    === igual en tipo de dato y valor
-                    == igual solo en valor
-
-                    !== diferente en tipo de dato y valor
-                    != diferente solo en valor
-
-                    !value = negacion/es diferente pero con una variable
-                    !!value = doble negacion (que exista)
-
-                    */
                     if(!!value && value !== ''){
                         const toDoList = document.getElementById('to-do-list');
                         const li = document.createElement('li');
@@ -68,14 +77,6 @@ El root se imprimiria como un objeto
                         li.classList.toggle("completed", checkbox.checked);
                         });
 
-                        /*
-                        const edtiButton = document.createElement('span');
-                        editButton.textContent = 'Edit'; 
-
-                        editButton.addEventListener('click', (e) => {
-
-                        })
-                        */
                        const editButton = document.createElement('span');
                        editButton.textContent = 'Edit';
 
@@ -109,9 +110,7 @@ El root se imprimiria como un objeto
                         //Para borrar en el input de forma inmediata
                         event.target.element.value = '';
                     }
-
-                    
-                })
+                });
 
             </script>
 
