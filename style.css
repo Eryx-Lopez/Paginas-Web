@@ -1,109 +1,50 @@
 body{
-    font-family: 'Oswald';
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.calculator{
+    width: 320px;
+    margin: 0, auto;
+    border: 1px solid olive;
+    border-radius: 8px;
+    padding: 24px;
 }
 
-.navbar{
-    background-color: white;
+.header{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-top: 8px;
-    margin-bottom: 0px;
 }
 
-.navbar ul{
-    list-style-type: none; /*Adiós viñetas*/
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: left;
-    flex-grow: 1; /*Lista ocupa resto de espacio*/
+.header h1{
+    font-size: 24px;
+    color: rgb(187, 51, 96);
 }
-
-.navbar li{
-    margin: 0 4px; /*Espacio entre los enlaces*/
-}
-
-.navbar li a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar li a:hover {
-    background-color: #F2F2F2;
-    border-radius: 8px;
-}
-
-.navbar img{
-    height: 32px;
-    margin-right: 16px;
-    margin-left: 16px;
-}
-.login-button{
-    background-color: #323F59;
-    color: white;
-    padding: 8px;
-    border-radius: 8px;
-    margin-right: 8px;
-}
-
-.container {
-    display: flex;
-    align-items: flex-start;
-}
-
-.column {
-    flex: 1;
-    padding: 20px;
-}
-
-.image {
-    flex: 1;
+.display{
+    font-size: 32px;
+    padding: 16px;
     text-align: right;
-}
-
-img {
-    max-height: 480px;
-    height: auto;
-}
-.title {
-    margin-left: 24px; 
-}
-
-.cta-button{
-    display: block;
-    background-color: #323F59;
-    padding: 8px 48px;
+    background-color: beige;
+    color: black;
     border-radius: 8px;
-    color: white;
-    text-align: center;
-}
-
-.column p{
     margin-bottom: 32px;
-}
-hr {
-    height: 1px; 
-    margin-left: 0; /* Empieza desde el lado izquierdo */
-    margin-right: 50%; /* Termina a la mitad del contenedor (Espacio dejado desde la derecha)*/
-    background-color: #97A2A6;
-    margin-bottom: 56px;
-}
-/*
-.language-selector{
-    margin-left: auto;
-    margin-right: 16px;
-    padding: 4px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 16px;
+    border: 1px solid olive;
+    width: 80%;
 }
 
-.language-selector option{
-    font-weight: bold;
-}*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button{
+    font-size: 32px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: olive;
+    color: white;
+
+}
