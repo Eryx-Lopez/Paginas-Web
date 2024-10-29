@@ -1,0 +1,208 @@
+/* BARRA DE NAVEGACION */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 56px;
+    font-family: 'Messapia-Regular';
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nav-content li{
+    
+    border-bottom: 4px solid transparent;
+    list-style: none;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.nav-content li:hover{
+    border-bottom: 4px solid black; 
+}
+
+.navbar li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* INICIO */
+
+.container-inicio { 
+    position: relative; 
+    width: 300px; /* Ajusta el tamaño según sea necesario */ 
+    margin-top: 56px;
+} 
+.container img { 
+    height: 400px; 
+} 
+.text-overlay1 { 
+    position: absolute; 
+    top: 20px; /* Ajusta la posición según sea necesario */ 
+    left: -500px; /* Ajusta la posición según sea necesario */ 
+    color: black; 
+    padding: 5px;
+} 
+
+.text-overlay2 { 
+    position: absolute; 
+    top: 20px; /* Ajusta la posición según sea necesario */ 
+    left: 500px; /* Ajusta la posición según sea necesario */ 
+    color: black; 
+    padding: 5px;
+} 
+
+.text-overlay3{
+    position: absolute; 
+    top: 200px; /* Ajusta la posición según sea necesario */ 
+    left: 300px; /* Ajusta la posición según sea necesario */ 
+    color: black; 
+    padding: 5px; 
+    width: 80px;
+}
+
+/* SOBRE MI */
+.container-sm { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    height: auto; 
+    gap: 15px;
+} 
+
+.container-parts{
+    margin-bottom: 24px;
+}
+
+.titulo-sm{
+    margin: 24px;
+}
+
+.text-sm{
+    margin: 12px;
+}
+
+
+/* izquierdo */
+
+.izquierdo, .derecho { 
+    height: auto;
+} 
+
+.text-cont{
+    margin: 12px;
+    width: 75px;
+}
+.cont-habilidades{
+    display: flex;
+    flex-direction: column;
+}
+
+.habilidad{
+    display: flex;
+    align-items: center;
+}
+
+.circle-container{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    gap: 15px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#relleno{
+    background-color: black;
+}
+
+/* centro */
+.centro { 
+    display: grid; 
+    grid-template-rows: auto 1fr; 
+} 
+
+.top { 
+    background-color: gray; 
+    height: 700px; 
+    border-bottom-left-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+} 
+
+.img-center{
+    display: flex;
+    justify-content: center;
+}
+.container-parts img{
+    width: 350px;
+    height: 200px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* derecho */
+
+
+.center-text{
+    display: flex;
+    justify-content: center;
+}
+
+#border-color{
+    border-right: 4px solid black;
+
+}
+
+/* PROYECTOS */
+.project-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 64px;
+    margin-top: 100px;
+    gap: 600px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+}
+
+.big-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+/* CONTACTO */
