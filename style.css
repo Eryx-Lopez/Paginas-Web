@@ -1,3 +1,30 @@
+h1, h2, h3, h4{
+    font-family: 'Anton';
+}
+
+p{
+    font-family: 'Schibsted Grotesk';
+}
+
+@media (max-width: 320px) { 
+    h1 { font-size: 1.5em; } 
+    .proyecto { margin-bottom: 20px; } 
+    .banner{
+        width: 100%;
+        max-width: 320px;
+    }
+    .container-sm { 
+        display: flex; 
+        flex-direction: row;
+        height: auto; 
+        gap: 15px;
+    } 
+}
+
+
+
+
+
 /* BARRA DE NAVEGACION */
 .navbar{
     position: fixed;
@@ -48,6 +75,7 @@
 
 /* INICIO */
 
+
 .container-inicio { 
     position: relative; 
     width: 300px; /* Ajusta el tamaño según sea necesario */ 
@@ -58,27 +86,34 @@
 } 
 .text-overlay1 { 
     position: absolute; 
-    top: 20px; /* Ajusta la posición según sea necesario */ 
-    left: -500px; /* Ajusta la posición según sea necesario */ 
+    top: 200px; 
+    left: 1500px; 
     color: black; 
     padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+
 } 
 
 .text-overlay2 { 
     position: absolute; 
-    top: 20px; /* Ajusta la posición según sea necesario */ 
-    left: 500px; /* Ajusta la posición según sea necesario */ 
+    top: 50px; 
+    left: 200px; 
     color: black; 
     padding: 5px;
+    font-size: larger;
+    font-weight: bold;
 } 
 
 .text-overlay3{
     position: absolute; 
-    top: 200px; /* Ajusta la posición según sea necesario */ 
-    left: 300px; /* Ajusta la posición según sea necesario */ 
+    top: 450px; 
+    left: 1600px; 
     color: black; 
-    padding: 5px; 
-    width: 80px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    width: 300px;
 }
 
 /* SOBRE MI */
@@ -149,7 +184,7 @@
 } 
 
 .top { 
-    background-color: gray; 
+    background-color: #e9e8e8; 
     height: 700px; 
     border-bottom-left-radius: 25px; 
     border-bottom-right-radius: 25px; 
@@ -164,6 +199,8 @@
     height: 200px;
     margin-top: 24px;
     margin-bottom: 24px;
+    border-radius: 20px;
+
 }
 
 /* derecho */
@@ -185,6 +222,7 @@
     flex-direction: row;
     align-items: center;
 
+    padding-bottom: 12px;
     margin-left: 64px;
     margin-right: 64px;
     margin-bottom: 24px;
@@ -201,12 +239,6 @@
     width: 500px;
 }
 
-.big-circle{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: black;
-}
 
 
 .carousel-cont{
@@ -220,3 +252,95 @@
 }
 
 /* CONTACTO */
+
+.contacto{
+    display: flex; 
+    justify-content: center; 
+    align-items:center;
+    width: 80;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.enviar-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enviar-btn:hover {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #e9e8e8;
+    padding: 20px;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.footer-row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+
+    margin-bottom: 10px;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-item img {
+    max-width: 20px; 
+    margin: 10px;
+}
+.footer-item p {
+    margin: 0;
+}
+.footer-row a, .footer-row2 a { 
+    text-decoration: none; 
+    color: black; 
+    margin: 0;
+}
+
+.footer-item-id {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;    
+    gap: 50px;
+    border-color:  black;
+     
+}
+
+.separated{
+    margin-right: 300px;
+}
